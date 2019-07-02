@@ -1,4 +1,4 @@
-package net.number64.common.regexengine;
+package net.number64.open.regexengine;
 
 import java.util.Scanner;
 

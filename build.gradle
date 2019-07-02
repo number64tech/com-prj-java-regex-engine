@@ -23,7 +23,7 @@ dependencies {
 test {
     useJUnit()
 }
-group 'common-project'
+group 'open-project'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

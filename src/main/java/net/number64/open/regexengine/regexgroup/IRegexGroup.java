@@ -1,4 +1,4 @@
-package net.number64.common.regexengine.regexgroup;
+package net.number64.open.regexengine.regexgroup;
 
 public interface IRegexGroup {
 

@@ -1,6 +1,6 @@
-package net.number64.common.regexengine;
+package net.number64.open.regexengine;
 
-import net.number64.common.regexengine.regexgroup.IRegexGroup;
+import net.number64.open.regexengine.regexgroup.IRegexGroup;
 
 public class Matcher {
 

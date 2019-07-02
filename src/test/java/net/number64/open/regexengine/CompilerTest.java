@@ -1,9 +1,9 @@
-package net.number64.common.regexengine;
+package net.number64.open.regexengine;
 
-import net.number64.common.regexengine.regexgroup.IRegexGroup;
-import net.number64.common.regexengine.regexgroup.RegexGroupCharAndAsterisk;
-import net.number64.common.regexengine.regexgroup.RegexGroupCharAndQ;
-import net.number64.common.regexengine.regexgroup.RegexGroupFixedLength;
+import net.number64.open.regexengine.regexgroup.IRegexGroup;
+import net.number64.open.regexengine.regexgroup.RegexGroupCharAndAsterisk;
+import net.number64.open.regexengine.regexgroup.RegexGroupCharAndQ;
+import net.number64.open.regexengine.regexgroup.RegexGroupFixedLength;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
@@ -180,21 +180,21 @@ public class CompilerTest {
     //----------------------------------------------------------------------------------------------------
 
     private Method extractDivideRegexPatternToUnits() throws Exception {
-        Class<?> compilerClass = Class.forName("net.number64.common.regexengine.Compiler");
+        Class<?> compilerClass = Class.forName("net.number64.open.regexengine.Compiler");
         Method method = compilerClass.getDeclaredMethod("divideRegexPatternToUnits", String.class);
         method.setAccessible(true);
         return method;
     }
 
     private Method extractGenerateRegexGroupChain() throws Exception {
-        Class<?> compilerClass = Class.forName("net.number64.common.regexengine.Compiler");
+        Class<?> compilerClass = Class.forName("net.number64.open.regexengine.Compiler");
         Method method = compilerClass.getDeclaredMethod("generateRegexGroupChain", (new ArrayList<String>()).getClass());
         method.setAccessible(true);
         return method;
     }
 
     private Method extractGenerateRegexGroup() throws Exception {
-        Class<?> compilerClass = Class.forName("net.number64.common.regexengine.Compiler");
+        Class<?> compilerClass = Class.forName("net.number64.open.regexengine.Compiler");
         Method method = compilerClass.getDeclaredMethod("generateRegexGroup", String.class);
         method.setAccessible(true);
         return method;

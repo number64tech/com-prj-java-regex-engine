@@ -1,6 +1,6 @@
-package net.number64.common.regexengine.regexgroup;
+package net.number64.open.regexengine.regexgroup;
 
-import net.number64.common.regexengine.Compiler;
+import net.number64.open.regexengine.Compiler;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +17,7 @@ public class AbstractRegexGroupTest {
     private Method adjustStartIndexAndCallNextUnit;
 
     public AbstractRegexGroupTest() throws Exception {
-        Class<?> compilerClass = Class.forName("net.number64.common.regexengine.regexgroup.AbstractRegexGroup");
+        Class<?> compilerClass = Class.forName("net.number64.open.regexengine.regexgroup.AbstractRegexGroup");
         compareAndGetMaxRepetitionCount = compilerClass.getDeclaredMethod(
                 "compareAndGetMaxRepetitionCount", String.class, int.class);
         compareAndGetMaxRepetitionCount.setAccessible(true);

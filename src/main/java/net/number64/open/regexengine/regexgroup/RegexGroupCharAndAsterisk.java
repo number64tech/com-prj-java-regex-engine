@@ -1,26 +1,27 @@
-package net.number64.common.regexengine.regexgroup;
+package net.number64.open.regexengine.regexgroup;
 
-public class RegexGroupCharAndQ extends AbstractRegexGroup {
+public class RegexGroupCharAndAsterisk extends AbstractRegexGroup {
 
-    public RegexGroupCharAndQ(String rawRegexUnit) {
+    public RegexGroupCharAndAsterisk(String rawRegexUnit) {
         super(rawRegexUnit);
-        if (rawRegexUnit.length() != 2 || ! rawRegexUnit.endsWith(SINGLE_STRING_POINT_Q_MARK)) {
+        if (rawRegexUnit.length() != 2 || ! rawRegexUnit.endsWith(SINGLE_STRING_POINT_ASTERISK)) {
             throw new IllegalArgumentException("Invalid regex sub expression:" + rawRegexUnit);
         }
-        // Type CharAndQ needs one regex char, and needs 0 or 1 matching (zero is allowed).
+        // Type CharAndAsterisk needs one regex char, and needs 0 or more matching (zero is allowed).
         dividedRegex = (rawRegexUnitString.substring(0, 1)).toCharArray();
         necessaryRepetitionCount = 0;
     }
 
     @Override
     protected int getMaxMatchableCount(String targetString, int baseIndex) {
-        // Type CharAndQ behaves greedy. So result is 1.
-        return 1;
+        // Asterisk behaves greedy. result is length 'to the end'
+        int targetStringRemainingLength = targetString.length() - baseIndex;
+        return (targetStringRemainingLength / dividedRegex.length);
     }
 
     @Override
     protected boolean canMatchOutOfBounds() {
-        // Question allows 0 size matching. So result is true.
+        // Asterisk allows 0 size matching. So result is true.
         return true;
     }
 

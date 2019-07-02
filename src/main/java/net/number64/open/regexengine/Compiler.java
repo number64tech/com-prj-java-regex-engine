@@ -1,9 +1,9 @@
-package net.number64.common.regexengine;
+package net.number64.open.regexengine;
 
-import net.number64.common.regexengine.regexgroup.RegexGroupCharAndAsterisk;
-import net.number64.common.regexengine.regexgroup.RegexGroupCharAndQ;
-import net.number64.common.regexengine.regexgroup.RegexGroupFixedLength;
-import net.number64.common.regexengine.regexgroup.IRegexGroup;
+import net.number64.open.regexengine.regexgroup.RegexGroupCharAndAsterisk;
+import net.number64.open.regexengine.regexgroup.RegexGroupCharAndQ;
+import net.number64.open.regexengine.regexgroup.RegexGroupFixedLength;
+import net.number64.open.regexengine.regexgroup.IRegexGroup;
 
 import java.util.ArrayList;
 
