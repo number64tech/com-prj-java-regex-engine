@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-group 'recruiting-assignment'
+group 'open-project'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -22,16 +22,4 @@ dependencies {
 
 test {
     useJUnit()
-}
-group 'open-project'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
