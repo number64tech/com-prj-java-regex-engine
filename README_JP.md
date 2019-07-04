@@ -1,28 +1,23 @@
-## Simple Regex Engine
+## 簡易正規表現エンジン
 
-README(ja) is [here](./README_JP.md).
+英語版は[こちら](./README.md)  
 
-### Outline
+### 概要
 
-+ Object
-  - Developing an application of simplified regex engine. 
-+ What does it do?
-  - It finds longest matching partial string using specified Regex from target string , and outputs its length.
++ 目的  
+  - 簡易正規表現エンジンの開発。  
++ 機能  
+  - 検索対象文字列を正規表現で検索し、一致する部分文字列の最大の長さを出力する。
 
-### Premise  
+### 前提  
 
-★ translating.. now
-
-
-
-+ Target string  
++ 検索対象文字列  
   - S: `a-z` のアルファベット小文字のみを含む、1000文字以下の文字列  
-+ Regex Pattern  
++ 正規表現文字列  
   - R: `a-z` のアルファベット小文字と, `.?*` のみを含む、1000文字以下の文字列  
-+ Scope at Version 1.0  
++ Ver 1.0時点でのスコープ  
   - 正規表現 `.`, `*`, `?` の機能に対応する。
-+ Note  
-  - 
++ Javaの正規表現機能は使用しない
 
 ### 制限事項
 
@@ -43,4 +38,5 @@ README(ja) is [here](./README_JP.md).
   - 最長文字数を標準出力に出力する。  
   - 一致する部分が無い場合は、-1 を出力する。
   - 前提および制限事項を満たさない文字列が与えられた場合、メッセージを出力し異常終了する。
+
 
