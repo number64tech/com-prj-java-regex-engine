@@ -40,3 +40,7 @@ README(ja) is [here](./README_JP.md).
   - If any part-string doesn't match, prints -1. 
   - If illegal inputs are given, It exits as failure.  
 
+
+
+add 2020/09/27
+
